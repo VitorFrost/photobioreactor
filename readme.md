@@ -4,6 +4,8 @@
 
 Nós segmentamoso o sistema em componentes individuais para simplificar a escolha e construção de cada item, e possíveis modificações. A escolha dos componentes seguem dois critérios: preço e facilidade de aquisição dos itens.
 
+![PBR](https://github.com/VitorFrost/PhotoBioReactor/blob/main/Images/PBR.jpeg)
+
 ## O sistema consiste em:
 
 - Frasco de reação
