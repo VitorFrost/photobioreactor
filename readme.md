@@ -4,9 +4,9 @@
 
 Nós segmentamoso o sistema em componentes individuais para simplificar a escolha e construção de cada item, e possíveis modificações. A escolha dos componentes seguem dois critérios: preço e facilidade de aquisição dos itens.
 
-O sistema consiste em:
+## O sistema consiste em:
 
-## Frasco de reação
+- Frasco de reação
 - Tampa do frasco
 - Sistema de agitação
 - Injeção de Nutrientes
@@ -17,5 +17,7 @@ O sistema consiste em:
 - Sensor de luz e/ou cor
 - Sistema de amostragem
 - Placas e software de controle
+
+Veja mais na [Wiki](Wiki)
 
 ### Adorariamos sua contribuição! Entre em contato conosco para fazer parte do projeto.
