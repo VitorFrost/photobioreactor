@@ -18,6 +18,6 @@ Nós segmentamoso o sistema em componentes individuais para simplificar a escolh
 - Sistema de amostragem
 - Placas e software de controle
 
-Veja mais na [Wiki](Wiki)
+Veja mais na [Wiki](https://github.com/VitorFrost/PhotoBioReactor/wiki)
 
 ### Adorariamos sua contribuição! Entre em contato conosco para fazer parte do projeto.
