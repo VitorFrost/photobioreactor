@@ -1,10 +1,10 @@
-# Bem vindo ao projeto do Fotobiorreator aberto!
+# Welcome to the Open Photobioreactor project!
 
 ❗ Projeto em desenvolvimento, esta apresentação não representa o estado atual do desenvovlimento ou as suas funcionalidades, mas guiam nosso interesse no projeto.
 
 Nós segmentamoso o sistema em componentes individuais para simplificar a escolha e construção de cada item, e possíveis modificações. A escolha dos componentes seguem dois critérios: preço e facilidade de aquisição dos itens.
 
-![PBR](https://github.com/VitorFrost/PhotoBioReactor/blob/main/Images/PBR.jpeg)
+![PBR](https://github.com/VitorFrost/photobioreactor/blob/main/Images/PBR.jpeg)
 
 ## O sistema consiste em:
 
@@ -20,6 +20,6 @@ Nós segmentamoso o sistema em componentes individuais para simplificar a escolh
 - Sistema de amostragem
 - Placas e software de controle
 
-Veja mais na [Wiki](https://github.com/VitorFrost/PhotoBioReactor/wiki)
+Veja mais na [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
 
 ### Adorariamos sua contribuição! Entre em contato conosco para fazer parte do projeto.
