@@ -1,25 +1,26 @@
 # Welcome to the Open Photobioreactor project!
 
-❗ Projeto em desenvolvimento, esta apresentação não representa o estado atual do desenvovlimento ou as suas funcionalidades, mas guiam nosso interesse no projeto.
+❗ This is an on progress project and this may not presententiont he last development state. Here you can look for our goals.
 
-Nós segmentamoso o sistema em componentes individuais para simplificar a escolha e construção de cada item, e possíveis modificações. A escolha dos componentes seguem dois critérios: preço e facilidade de aquisição dos itens.
+For a better understanding, we have 
+We have segmented the system into individual components to simplify the choice and construction of each item, and possible modifications. The choice of components follows two criteria: price and ease of acquisition of the items.
 
 ![PBR](https://github.com/VitorFrost/photobioreactor/blob/main/Images/PBR.jpeg)
 
-## O sistema consiste em:
+## The system consists of:
 
-- Frasco de reação
-- Tampa do frasco
-- Sistema de agitação
-- Injeção de Nutrientes
-- Entrada e saída de gases
-- Leitura e controle da temperatura
-- Leitura do pH
-- Iluminação controlada
-- Sensor de luz e/ou cor
-- Sistema de amostragem
-- Placas e software de controle
+- reaction bottle
+- bottle cap
+- Agitation system
+- Nutrient Injection
+- Gas inlet and outlet
+- Temperature reading and control
+- pH reading
+- Controlled lighting
+- Light and/or color sensor
+- Sampling system
+- Control boards and software
+- 
+See more at our [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
 
-Veja mais na [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
-
-### Adorariamos sua contribuição! Entre em contato conosco para fazer parte do projeto.
+### We would love your contribution! Be part of the project.
