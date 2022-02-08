@@ -20,7 +20,10 @@ We have segmented the system into individual components to simplify the choice a
 - Light and/or color sensor
 - Sampling system
 - Control boards and software
-- 
+
+Project diagram: ![Diagram](https://github.com/VitorFrost/photobioreactor/blob/main/Images/diagram.jpg)
+
 See more at our [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
+
 
 ### We would love your contribution! Be part of the project.
