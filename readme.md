@@ -5,7 +5,7 @@
 For a better understanding, we have 
 We have segmented the system into individual components to simplify the choice and construction of each item, and possible modifications. The choice of components follows two criteria: price and ease of acquisition of the items.
 
-![PBR](https://github.com/VitorFrost/photobioreactor/blob/main/Images/PBR.jpeg)
+![PBR](https://github.com/VitorFrost/photobioreactor/blob/main/Images/Teaser.mp4)
 
 ## The system consists of:
 
