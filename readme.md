@@ -1,20 +1,19 @@
 # Welcome to the Open Photobioreactor project!
 
-❗ This is an on progress project and this may not presententiont he last development state. Here you can look for our goals.
+❗ This is a work in progress project, and this may not presententiont he last development state. Here you can look for our goals.
 
-For a better understanding, we have 
-We have segmented the system into individual components to simplify the choice and construction of each item, and possible modifications. The choice of components follows two criteria: price and ease of acquisition of the items.
+We have segmented the system into individual components to simplify the choice
+and construction of each item, and possible modifications. This choice of components follows two main criteria: price and ease of acquisition of the items.
 
 
 https://user-images.githubusercontent.com/5491480/153220264-1c72c390-68ee-4ad2-ac72-8d24d0f5e571.mp4
 
 
 
-
 ## The system consists of:
 
-- reaction bottle
-- bottle cap
+- Reaction bottle
+- Bottle cap
 - Agitation system
 - Nutrient Injection
 - Gas inlet and outlet
@@ -25,7 +24,8 @@ https://user-images.githubusercontent.com/5491480/153220264-1c72c390-68ee-4ad2-a
 - Sampling system
 - Control boards and software
 
-Project diagram: ![Diagram](https://github.com/VitorFrost/photobioreactor/blob/main/Images/diagram.jpg)
+## Project diagram:
+ ![Diagram](https://github.com/VitorFrost/photobioreactor/blob/main/Images/diagram.jpg)
 
 See more at our [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
 
