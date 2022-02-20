@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/5491480/153220264-1c72c390-68ee-4ad2-a
 ## Project diagram:
  ![Diagram](https://github.com/VitorFrost/photobioreactor/blob/main/Images/diagram.jpg)
 
-See more at our [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
+# See more at our [Wiki](https://github.com/VitorFrost/photobioreactor/wiki)
 
 
-### We would love your contribution! Be part of the project.
+## We would love your contribution! Be part of the project.
