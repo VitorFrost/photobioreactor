@@ -41,7 +41,7 @@ chan0 = AnalogIn(ads, ADS.P0)
 
 #Helper function to convert ADC output back into original voltage signal
 def analog_to_pH(adc_output):
-  ph_equivalent = (adc_output * float(1 / 4.096) + 7.0)
+  ph_equivalent = (adc_output * float(1 / 32767) + 7.0)
   return ph_equivalent
 
 #create total file path (with date)
