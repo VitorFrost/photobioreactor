@@ -7,6 +7,7 @@ Dependencies for sensors:
 '''
 
 from time import sleep
+import time
 import math
 import csv
 import os.path
@@ -38,17 +39,16 @@ DELAY_INTERVAL = 5
 temp_sensor = W1ThermSensor()
 ads = ADS.ADS1115(i2c)
 chan0 = AnalogIn(ads, ADS.P0)
-s2 = 23 #Color sensor
-s3 = 24 #Color sensor
-signal = 22 #Color sensor
+s2 = 5 #Color sensor GPIO5 to S2 sensor input
+s3 = 6 #Color sensor
+signal = 26 #Color sensor
 NUM_CYCLES = 10 #Color sensor
 
-
-def setup(): #Color sensor
-  GPIO.setmode(GPIO.BCM)
-  GPIO.setup(signal,GPIO.IN, pull_up_down=GPIO.PUD_UP)
-  GPIO.setup(s2,GPIO.OUT)
-  GPIO.setup(s3,GPIO.OUT)
+#Color sensor ports config
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(signal,GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(s2,GPIO.OUT)
+GPIO.setup(s3,GPIO.OUT)
 
 
 #Helper function to convert ADC output back into original voltage signal
@@ -61,7 +61,7 @@ file_name = DATA_PATH + '/' + date_string + '_' + DATA_NAME
 
 #if the file does not already exist, create a new file with csv headers
 if not os.path.isfile(file_name):
-    csv_headers = ['Date', 'Time','Temperature', 'pH', 'pH_RAW']
+    csv_headers = ['Date', 'Time','Temperature', 'pH', 'pH_RAW', 'red', 'green', 'blue', 'white']
     with open(file_name, 'w') as new_data_file:
         datawriter = csv.writer(new_data_file)
         datawriter.writerow(csv_headers)
@@ -83,11 +83,52 @@ while True:
     
     #sensor2
     pH_output = chan0.value 
-    print (pH_output)
     pH_value = pH_output
     new_log.append("{:>2.4f}".format(pH_value))
     new_log.append("{:>2.4f}".format(pH_output))
     
+    #colors
+    GPIO.output(s2,GPIO.LOW)
+    GPIO.output(s3,GPIO.LOW)
+    time.sleep(0.3)
+    start = time.time()
+    for impulse_count in range(NUM_CYCLES):
+      GPIO.wait_for_edge(signal, GPIO.FALLING)
+    duration = time.time() - start      #seconds to run for loop
+    red  = NUM_CYCLES / duration   #in Hz
+    
+    GPIO.output(s2,GPIO.HIGH)
+    GPIO.output(s3,GPIO.HIGH)
+    time.sleep(0.3)
+    start = time.time()
+    for impulse_count in range(NUM_CYCLES):
+      GPIO.wait_for_edge(signal, GPIO.FALLING)
+    duration = time.time() - start
+    green = NUM_CYCLES / duration
+
+    GPIO.output(s2,GPIO.LOW)
+    GPIO.output(s3,GPIO.HIGH)
+    time.sleep(0.3)
+    start = time.time()
+    for impulse_count in range(NUM_CYCLES):
+      GPIO.wait_for_edge(signal, GPIO.FALLING)
+    duration = time.time() - start
+    blue = NUM_CYCLES / duration
+
+    GPIO.output(s2,GPIO.HIGH)
+    GPIO.output(s3,GPIO.LOW)
+    time.sleep(0.3)
+    start = time.time()
+    for impulse_count in range(NUM_CYCLES):
+      GPIO.wait_for_edge(signal, GPIO.FALLING)
+    duration = time.time() - start      #seconds to run for loop
+    white  = NUM_CYCLES / duration   #in Hz
+
+    new_log.append(red)
+    new_log.append(blue)
+    new_log.append(green)
+    new_log.append(white)
+
     #write results to log
     with open(file_name, 'a') as data_log:
         logwriter = csv.writer(data_log)
