@@ -11,6 +11,7 @@ import math
 import csv
 import os.path
 from datetime import datetime
+import RPi.GPIO as GPIO
 
 
 #import sensors
@@ -37,6 +38,17 @@ DELAY_INTERVAL = 5
 temp_sensor = W1ThermSensor()
 ads = ADS.ADS1115(i2c)
 chan0 = AnalogIn(ads, ADS.P0)
+s2 = 23 #Color sensor
+s3 = 24 #Color sensor
+signal = 22 #Color sensor
+NUM_CYCLES = 10 #Color sensor
+
+
+def setup(): #Color sensor
+  GPIO.setmode(GPIO.BCM)
+  GPIO.setup(signal,GPIO.IN, pull_up_down=GPIO.PUD_UP)
+  GPIO.setup(s2,GPIO.OUT)
+  GPIO.setup(s3,GPIO.OUT)
 
 
 #Helper function to convert ADC output back into original voltage signal
