@@ -49,7 +49,7 @@ file_name = DATA_PATH + '/' + date_string + '_' + DATA_NAME
 
 #if the file does not already exist, create a new file with csv headers
 if not os.path.isfile(file_name):
-    csv_headers = ['Date', 'Time','Temperature', 'pH']
+    csv_headers = ['Date', 'Time','Temperature', 'pH', 'pH_RAW']
     with open(file_name, 'w') as new_data_file:
         datawriter = csv.writer(new_data_file)
         datawriter.writerow(csv_headers)
@@ -74,6 +74,7 @@ while True:
     print (pH_output)
     pH_value = pH_output
     new_log.append("{:>2.4f}".format(pH_value))
+    new_log.append("{:>2.4f}".format(pH_output))
     
     #write results to log
     with open(file_name, 'a') as data_log:
