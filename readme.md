@@ -1,6 +1,6 @@
 # Welcome to the Open Photobioreactor project!
 
-## ❗ This is a work in progress project, and this may not presententiont he last development state. Here you can look for our goals. The most updated documentation on how to build is avalable on this document: [Building instructions](https://github.com/VitorFrost/photobioreactor/blob/main/Bioreactor%20instructions.pdf) 
+## ❗ This is a work in progress project, and may not presententiont the last development state. Yet, you can look for our goals. The most updated documentation on how to build is avalable on this document: [Building instructions](https://github.com/VitorFrost/photobioreactor/blob/main/Bioreactor%20instructions.pdf) 
 
 
 We have segmented the system into individual components to simplify the choice
